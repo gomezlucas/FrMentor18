@@ -44,6 +44,8 @@
 
 @media screen and (min-width:1200px){
   .rules-container {
-    margin-top: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
   }
 }
