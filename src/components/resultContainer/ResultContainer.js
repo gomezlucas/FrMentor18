@@ -42,7 +42,7 @@ class ResultContainer extends React.Component {
 
                                         <p class="info-game">You picked</p>
                                 </div>
-                                {!this.props.loading ?
+                                {this.props.loading ?
                                         <>
                                                 <div class="resultContainer__info">
                                                         <h1 class="game-result">{this.props.resultMsg} </h1>
