@@ -1,7 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Rock, Paper, Scissors coding challenge](./original/desktop-step-1.jpg)
 
 ## Welcome! 👋
 

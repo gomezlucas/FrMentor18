@@ -59,3 +59,10 @@
     
 }
  
+
+@media screen and (max-width:500px){
+  .imageBorder {
+    width: 7rem;
+    height: 7rem;
+  }
+}
