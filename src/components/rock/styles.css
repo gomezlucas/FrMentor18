@@ -1,0 +1,61 @@
+.imageBorder {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.image {
+  transform: scale(1.5);
+}
+
+.rock {
+  border: 15px solid hsl(349, 70%, 56%);
+  box-shadow: inset 0 4px 3px -1px rgba(128, 128, 128, 0.767),
+    1px 8px hsl(349, 71%, 52%);
+  grid-area: rock;
+  position: relative;
+}
+
+.rock .imageBorder {
+  float: right;
+  border: 7px solid hsl(349, 71%, 52%);
+}
+
+.rock:hover {
+  background: rgb(206, 201, 201);
+}
+
+.shadow {
+  width: 10rem;
+ height: 10rem;
+ box-shadow: 0 0 0 60px #1f3756, 0 0 0 120px #1b2e4f, 0 0 0 180px #182648;
+ z-index: -1;
+ position: absolute;
+ border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .imageBorder {
+    width: 9rem;
+  height: 9rem;
+    }
+
+    .image {
+      transform: scale(1);
+    }
+
+    .shadow {
+      width: 4rem;
+      height: 4rem;
+      box-shadow: 0 0 0 70px #1f3756, 0 0 0 100px #1b2e4f, 0 0 0 120px #182648;
+
+    }
+    
+}
+ 

@@ -1,0 +1,52 @@
+ 
+
+
+nav {
+    width: 80%;
+    border: 3px solid rgba(255, 255, 255, 0.11);
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  @media screen and (min-width: 1100px) {
+    nav {
+      width: 50%;
+      margin: 2rem auto;
+     }
+  }
+  
+  img {
+    /* margin: auto; */
+    display: block;
+    transform: scale(0.6);
+  }
+  
+ 
+  .scoreboard {
+    color: black;
+    background: white;
+    text-align: center;
+    padding: 0.4rem 1.6rem;
+    border-radius: 6px;
+    margin-right: 1rem;
+  }
+  
+  .scoreboard-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--scoreText);
+    letter-spacing: 1.1px;
+  }
+  
+  .score {
+    color:var(--darkText);
+    font-weight: 700;
+    font-size: 2.6rem;
+  }
+  
+  
+  

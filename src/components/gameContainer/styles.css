@@ -1,0 +1,32 @@
+.choices {  
+    display: grid;
+    grid-template-areas: "paper scissors" "rock rock";
+    grid-row-gap: 2rem;
+    grid-column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+   }
+
+   .triangle__container{
+     width: 100%;
+     position: absolute;
+   }
+
+   .triangle__img{
+width: 35rem;
+margin: 0 auto;
+     }
+
+
+     @media screen and (max-width: 1000px){
+      .triangle__img{
+        width: 25em;
+        margin: 0 auto;
+             }
+
+             .choices{
+              margin-top: 5rem;
+             }
+     }

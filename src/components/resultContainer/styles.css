@@ -1,0 +1,118 @@
+.resultContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem 7rem;
+  width: 85%;
+  margin: 0 auto;
+
+}
+
+.info-game {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 2px 3px black;
+  font-size: small;
+}
+
+.game-result {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 2px 3px black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.newGame-button {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: white;
+  color: hsl(229, 25%, 31%);
+  text-decoration: none;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px black;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.newGame-button:hover {
+  opacity: 0.5;
+}
+
+.newGame-button:active {
+  box-shadow: none;
+}
+
+.resultContainer__player,
+.resultContainer__computer {
+  display: flex;
+  flex-direction: column;
+  min-width: 151px;
+}
+
+.resultContainer__player p,
+.resultContainer__computer p {
+  order: -1;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.imageBorder__Empty {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(59, 67, 99, 0.301);
+}
+
+@media screen and (max-width: 1200px) {
+  .resultContainer__player {
+    grid-area: player;
+  }
+
+  .resultContainer__computer {
+    grid-area: computer;
+  }
+
+  .resultContainer__info {
+    grid-area: info;
+  }
+
+  .resultContainer__player p,
+  .resultContainer__computer p {
+    order: 0;
+  }
+
+  .resultContainer {
+    width: 95%;
+    grid-template-areas:
+      " player 0 computer"
+      "info info info";
+    grid-gap: 2rem 1rem;
+    }
+
+   .imageBorder__Empty {
+    width: 8rem;
+  height: 8rem;
+    }
+}
