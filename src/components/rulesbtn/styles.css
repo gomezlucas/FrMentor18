@@ -29,6 +29,7 @@
   }
   
 
+
   @media screen and (max-width:1000px){
     .rules-container {
       margin-top: 2rem;
@@ -40,4 +41,10 @@
     .rules-container {
       margin-top: 3rem;
    }
+}
+
+@media screen and (min-width:1200px){
+  .rules-container {
+    margin-top: 3rem;
+  }
 }

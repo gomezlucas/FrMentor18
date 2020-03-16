@@ -1,6 +1,9 @@
 .modal {
     width: 100%;
      top: 0;
+     bottom:0;
+     left:0;
+     right:0;
     background: white;
     position: absolute;
     padding: 3rem 2rem;
@@ -58,7 +61,7 @@
        fill: var(--darkBlue);
       }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 700px) {
  
     .modal-container {
       position: absolute;
@@ -102,11 +105,5 @@
       left: 257px;
     }
 
-   
-}
-
-@media screen and (max-width: 600px) {
-  .modal {
-    height: 100vh;
   }
-}
+ 
