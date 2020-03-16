@@ -110,6 +110,11 @@
     grid-gap: 2rem 1rem;
   }
 
+
+}
+
+
+@media screen and (max-width: 1000px){
   .imageBorder__Empty {
     width: 9rem;
     height: 9rem;
