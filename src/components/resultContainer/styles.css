@@ -120,3 +120,11 @@
     height: 9rem;
   }
 }
+
+
+@media screen and (max-width: 600px){
+  .imageBorder__Empty {
+    width: 7rem;
+    height: 7rem;
+  }
+}
