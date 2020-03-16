@@ -54,7 +54,7 @@ class App extends React.Component {
             :
             <ResultContainer
               mySelection={this.renderChoice(this.state.mySelection, this.state.resultMsg, 'mine', this.state.loading)}
-              computerSelection={this.renderChoice(this.state.computerSelection, this.state.resultMsg, "computer", false)}
+              computerSelection={this.renderChoice(this.state.computerSelection, this.state.resultMsg, "computer", this.state.loading)}
               resultMsg={this.state.resultMsg}
               handleButton={this.handleButton}
               setLoading={this.setLoading}
@@ -107,10 +107,12 @@ class App extends React.Component {
   }
 
   renderChoice = (word, txt, turn, loading) => {
+    console.log(word, turn,loading )
     let winner = false
     if (turn === "mine" && txt === "You win") {
       winner = true
     } else if (turn === "computer" && txt === "You lose") {
+      console.log('entro cuando gana la compu')
       winner = true
     }
 

@@ -3,7 +3,7 @@ import styles from "./styles.css"
 
 export default function Scissors(props) {
   const { secondRendering } = props
-
+  console.log(props)
     return (
         <div class="imageBorder scissors" 
         onClick={secondRendering ? null : () => props.handleClick('scissors')}    
