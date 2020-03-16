@@ -42,9 +42,10 @@ class ResultContainer extends React.Component {
 
                                         <p class="info-game">You picked</p>
                                 </div>
-                                {this.props.loading ?
+                                {!this.props.loading ?
                                         <>
-                                                <div class="resultContainer__info"><h1 class="game-result">{this.props.resultMsg} </h1>
+                                                <div class="resultContainer__info">
+                                                        <h1 class="game-result">{this.props.resultMsg} </h1>
                                                         <div class="button-container">
                                                                 <button onClick={this.props.handleButton} href="#" class="newGame-button"> Play Again</button>
                                                         </div>
@@ -58,7 +59,8 @@ class ResultContainer extends React.Component {
                                         </>
                                         :
                                         <>
-                                                <div class="resultContainer__info"><h1 class="game-result"> </h1>
+                                                <div class="resultContainer__info">
+                                                        <h1 class="game-result"> </h1>
                                                 </div>
                                                 <div class="resultContainer__computer">
                                                         <div class="imageBorder__Empty"  >

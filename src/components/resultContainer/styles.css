@@ -1,13 +1,12 @@
 .resultContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+  justify-items: center;
   align-items: center;
   justify-content: space-evenly;
   padding: 3rem 7rem 0 7rem;
   width: 85%;
   margin: 0 auto;
-
 }
 
 .info-game {
@@ -109,10 +108,10 @@
       " player 0 computer"
       "info info info";
     grid-gap: 2rem 1rem;
-    }
+  }
 
-   .imageBorder__Empty {
-    width: 8rem;
-  height: 8rem;
-    }
+  .imageBorder__Empty {
+    width: 9rem;
+    height: 9rem;
+  }
 }
